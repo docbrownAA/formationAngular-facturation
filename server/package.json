@@ -1,0 +1,10 @@
+{
+  "name": "factures-server",
+  "private": true,
+  "version": "0.0.0",  
+  "dependencies": {
+    "express":"latest",
+    "underscore": "latest",
+    "body-parser": "latest"
+  } 
+}

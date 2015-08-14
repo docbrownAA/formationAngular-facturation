@@ -1,0 +1,18 @@
+<div class="">
+    <h1>Factures:</h1>
+    <div ng-controller="ListefacturesCtrl">
+      Filtre: <input type="text" ng-model="filtre"/>
+      
+        <div ng-repeat="facture in factures">
+            <facture-detail></facture-detail>
+        </div>
+        <div>
+          <h1>Nouvelle facture</h1>
+            <ng-form name="add" ng-controller="FormcontrollerCtrl">
+            <input type="text" ng-model="facture.customer"/>
+            <input type="text" ng-model="facture.price"/>
+            <input type="submit" value="ajouter" ng-click="ajouter(facture)">
+            </ng-form>
+        </div>
+    </div>
+</div>
